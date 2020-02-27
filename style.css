@@ -1,0 +1,133 @@
+﻿* {
+  box-sizing: border-box;
+}
+body {
+   background-color: rgb(245 245 250);
+}
+
+/* top and footer navbar */
+nav ul, footer ul {  
+  list-style: none;  
+  margin-top: -3.7px;    
+  background-color: black;
+  padding: 0;
+  overflow: hidden;
+}
+nav ul li, footer ul li{     
+  float: left;  
+  
+}
+
+nav li a, footer li a {
+  text-decoration: none;
+  color: white;
+  padding: 14px 16px;
+  display: block;
+  text-align: center;
+  font-family: georgia;
+  font-weight: bold;
+  
+}
+
+nav ul :hover , footer ul :hover {
+  background-color: green;
+  
+}
+
+
+nav li.right1, footer li.right1 {
+  float: right;
+  margin-right: 5px;
+}
+
+
+/*  right side navigation bar */
+aside ul {
+  list-style: none;      
+  background-color: #f1f1f1;
+  padding: 5px;
+  overflow: hidden; 
+}
+
+
+
+aside li a {
+  text-decoration: none;
+  color: white;
+  padding: 14px 16px;
+  display: block;
+  text-align: center;
+  font-family: georgia;
+  font-weight: bold;
+  background-color: black;
+  margin: 5px;
+}
+
+aside li :hover {
+  background-color: green;
+  
+}
+
+/* containers at the main page which contains an image and a topic each */
+#container1 {
+  display: flex;
+  margin-top: 20px;
+ 
+}
+
+#container1 p {
+  margin-left: 5px;
+  padding: 10px;
+  font-family: georgia;
+}
+
+#container2 {
+  display: flex;
+  margin-top: 50px;
+  
+ 
+}
+
+#container2 p {
+  
+  margin-left: 5px;
+  padding: 10px;
+  font-family: georgia;
+}
+
+
+footer {
+  margin-top: 10px;
+}
+
+
+/* the main div of the page which contains sidebar and main */
+#website {  
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+}
+
+/* Create two unequal columns that sits next to each other */
+/* Sidebar/left column */
+aside {
+  -ms-flex: 30%; /* IE10 */
+  flex: 20%;
+  background-color: #f1f1f1;
+  padding: 10px;
+}
+
+/* Main column */
+main {   
+  -ms-flex: 70%; /* IE10 */
+  flex: 80%;
+  background-color: white;
+  padding: 20px;
+}
+
+@media screen and (max-width: 700px) {
+  #website {   
+    flex-direction: column;
+  }
+}
